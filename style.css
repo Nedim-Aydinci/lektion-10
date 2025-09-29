@@ -117,8 +117,8 @@ nav a:hover {
 
 /* Buttons - generiska och otydliga */
 button {
-  background-color: #8bc34a;
-  color: #2c5530;
+  background-color: #66a820;
+  color: #134f19;
   border: none;
   padding: 14px 28px;
   font-size: 15px;
@@ -130,7 +130,8 @@ button {
 }
 
 button:hover {
-  background-color: #7cb342;
+  background-color: #81ae51;
+ /* transform:translateY(-5px);*/
 }
 
 .secondary-btn {
@@ -181,11 +182,13 @@ p {
 /* Problems Section */
 .problems {
   background-color: white;
+  
 }
 
 .problem-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
   gap: 40px;
   margin-top: 40px;
 }
@@ -193,6 +196,13 @@ p {
 .problem-item {
   text-align: center;
   padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.problem-item:hover{
+    transform: translateY(-15px);
 }
 
 .problem-item img {
@@ -370,7 +380,8 @@ p {
   background: #f8f9fa;
   padding: 30px;
   border-radius: 8px;
-  border-left: 4px solid #8bc34a;
+  border: 2px solid #8bc34a;
+  transition-property: lightgreen;
 }
 
 .testimonial p {
